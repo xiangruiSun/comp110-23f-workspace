@@ -31,7 +31,7 @@ def max(list_int: list[int]) -> int:
     return int_max
 
 
-def is_equal(list_1: list[int], list_2: list) -> bool:
+def is_equal(list_1: list[int], list_2: list[int]) -> bool:
     """To identify whether two lists are identical."""
     idx: int = 0
     if len(list_1) != len(list_2):
@@ -42,4 +42,4 @@ def is_equal(list_1: list[int], list_2: list) -> bool:
             idx += 1
         else:
             return False
-    return True       
+    return True
