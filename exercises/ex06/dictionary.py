@@ -5,8 +5,7 @@ __author__ = "730525294"
 
 def invert(dict1: dict[str, str]) -> dict[str, str]:
     """Invert the key and value in a dictionary."""
-    count: dict1[str, int] = {}
-    string: str = ""
+    count: dict[str, int] = {}
     for values in dict1.values():
         count[values] = 0
     
@@ -27,14 +26,13 @@ def invert(dict1: dict[str, str]) -> dict[str, str]:
 def favorite_color(dict1: dict[str, str]) -> str:
     """The function returns the color that appears most frequently."""
     count: dict[str, int] = {}
-    color: str = ""
     for values in dict1.values():
         count[values] = 0
     
     for values1 in dict1.values():
         count[values1] += 1
 
-    max_color: str = {}
+    max_color: str = ""
     max_number: int = 0
 
     for key in count:
@@ -72,3 +70,4 @@ def update_attendance(dict1: dict[str, list[str]], day: str, student: str) -> di
         dict1[day].append(student)
     else:
         dict1[day] = [student]
+    return dict1
