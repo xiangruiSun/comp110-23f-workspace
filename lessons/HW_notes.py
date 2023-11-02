@@ -21,7 +21,7 @@
 """note 6"""
 #def name(name: list[int]) the parameter of list has to
 #define a type such as [int]
-list1 = ["A", 'B']
-for elem in list1:
-    elem.lower()
-print(list1)
+
+"""note 7"""
+#if x:
+#this means if x != 0:
