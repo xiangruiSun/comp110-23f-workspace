@@ -57,7 +57,7 @@ def alphabetizer(list1: list[str]) -> dict[str, list[str]]:
     """It produces a dictionary that categorizes element in list one according to its first letter."""
     dict1: dict[str, list[str]] = {}
     for elem in list1:
-        if elem[0] not in dict1:
+        if elem[0].lower() not in dict1:
             dict1[elem[0].lower()] = [elem]
         else:
             dict1[elem[0].lower()].append(elem)
@@ -67,7 +67,8 @@ def alphabetizer(list1: list[str]) -> dict[str, list[str]]:
 def update_attendance(dict1: dict[str, list[str]], day: str, student: str) -> dict[str, list[str]]:
     """It produces a dict to update attendance."""
     if day in dict1:
-        dict1[day].append(student)
+        if student not in dict1[day]:
+            dict1[day].append(student)
     else:
         dict1[day] = [student]
     return dict1
