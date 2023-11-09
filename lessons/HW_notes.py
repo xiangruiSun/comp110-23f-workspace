@@ -25,3 +25,14 @@
 """note 7"""
 #if x:
 #this means if x != 0:
+
+"""note 8"""
+#if x in list/dict:
+#可以用在dict，也可以用在list
+
+"""note 9"""
+#unit tests
+#in order to test the function with the same name
+#from module import function...
+#do not from file import module
+#if so, each function should be module.function instead of its name only

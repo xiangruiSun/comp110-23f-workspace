@@ -20,6 +20,7 @@ class Pizza:
         #default name __init__
         #no specify return type
         #returns a Pizza object, no need to say returns
+        #to access attribute value use <name>.<attribute name>
         self.size = inp_size
         self.toppings = inp_top
         self.gluten_free = inp_gf
@@ -43,4 +44,12 @@ class Pizza:
         """Make a new pizza with existing pizza's properties and add toppings"""
         new_pizza: Pizza = Pizza(self.size, self.toppings + num_toppings, self.gluten_free)
         return new_pizza
+    
+    def __str__(self) -> str:
+        """Make print() to print the things we want."""
+        pizza_info: str = f"PIZZA ORDER: size: {self.size}, toppings: {self.toppings}, GF: {self.gluten_free}"
+        return pizza_info
+
+my_pizza: Pizza = Pizza("medium", 2, False)
+print(my_pizza) #print the memory location not itself
 
