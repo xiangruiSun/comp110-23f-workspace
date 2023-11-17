@@ -15,3 +15,7 @@ print(addition(1,2))
 
 #<package name>.<module name> import <function name>
 #we are still running the whole module but we can only refer to addition function
+
+from exercises.ex06.dictionary import alphabetizer
+print(alphabetizer(['a','b','c']))
+
