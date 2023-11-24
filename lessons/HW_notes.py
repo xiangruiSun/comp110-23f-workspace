@@ -36,3 +36,17 @@
 #from module import function...
 #do not from file import module
 #if so, each function should be module.function instead of its name only
+
+"""note 10"""
+#format to write a class
+"""
+from __future__ import annotations
+
+class <class name>:
+    """"""
+    <attribute name> = <variable type>
+
+    def __init__(self, ,):
+    
+    def ->
+"""
