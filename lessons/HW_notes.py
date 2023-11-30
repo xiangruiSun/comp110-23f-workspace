@@ -50,3 +50,39 @@ class <class name>:
     
     def ->
 """
+
+"""note 11"""
+#string object cannot use reassignment operator
+"""
+a = 'abc'
+a[0] = 'e'
+print(a)
+
+not working
+"""
+
+#list object can use reassignment operator
+"""
+a = ['a','b','c']
+a[0] = 'e'
+print(a)
+"""
+
+#dict object cannot use append
+"""
+a = {'a': 1,'b': 2,'c': 3}
+a.append('e')
+print(a)
+
+not working
+"""
+
+#instead use
+"""
+a['a'] = 2
+a['e'] = 4
+a.pop('a')
+"""
+
+"""note 12"""
+#class name, the name of the class is by convention capitalized.
